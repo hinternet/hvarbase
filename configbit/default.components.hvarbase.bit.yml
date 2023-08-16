@@ -1,0 +1,28 @@
+# ==============================================================================
+# List of default varbase sub profile basic components, which they will be
+# installed when we install varbase.
+# ==============================================================================
+config_bit:
+  type: list
+  for: varbase_subprofile_basic.info.yml
+  when:
+    install_default_components: true
+    list:
+      dependencies:
+        # Enable listed Varbase modules in order at this installation step.
+        - varbase_core
+        - varbase_media
+        - varbase_editor
+        - varbase_admin
+        - varbase_email
+        - varbase_security
+        - varbase_seo
+        - varbase_workflow
+        - varbase_layout_builder
+        - vlplb
+        # Enable default varbase sub profile basic features.
+        - varbase_subprofile_basic_homepage
+#        - varbase_subprofile_basic_CUSTOM_FEATRE_01
+#        - varbase_subprofile_basic_CUSTOM_FEATRE_02
+#        - varbase_subprofile_basic_CUSTOM_FEATRE_03
+#        - varbase_subprofile_basic_CUSTOM_FEATRE_04
