@@ -120,6 +120,11 @@
     "patchLevel": {
       "drupal/core": "-p2"
     },
-    "patches": {}
+    "patches": {
+      "drupal/core": {
+        "Allow profiles to define a base/parent profile [continue of #1356276]":
+        "https://www.drupal.org/files/issues/2023-08-15/3266057-117.patch"
+      }
+    }
   }
 }
