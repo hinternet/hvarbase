@@ -24,6 +24,7 @@ install:
   - aggregator
   - menu_block
   - block_content
+  - config_split
 themes:
   - bootstrap_barrio
   - vartheme_bs4
